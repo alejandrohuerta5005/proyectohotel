@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Se vincula la hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/hotel.css">
+    <title>Reserva de Hotel</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Reserva de Hotel</h1>
+        </div>
+    </header>
+    <main>
+        <section class="formulario-reserva">
+            <div class="container">
+                <!-- Contenedor flexbox para centrar el título -->
+                <h2>Haz una Reserva</h2>
+                <form>
+                    <!-- Clase 'form-group' para agrupar etiquetas y campos de formulario -->
+                    <div class="form-group">
+                        <label for="fecha-llegada">Fecha de Llegada:</label>
+                        <input type="date" id="fecha-llegada" required>
+                    </div>
+                    <!-- Clase 'form-group' -->
+                    <div class="form-group">
+                        <label for="fecha-salida">Fecha de Salida:</label>
+                        <input type="date" id="fecha-salida" required>
+                    </div>
+                    <!-- Clase 'form-group' -->
+                    <div class="form-group">
+                        <label for="adultos">Adultos:</label>
+                        <input type="number" id="adultos" min="1" value="1">
+                    </div>
+                    <!-- Clase 'form-group' -->
+                    <div class="form-group">
+                        <label for="ninos">Niños:</label>
+                        <input type="number" id="ninos" min="0" value="0">
+                    </div>
+                    <!-- Clase 'form-group' -->
+                    <div class="form-group">
+                        <label for="plan">Selecciona Plan:</label>
+                        <select id="plan">
+                            <option value="solo-hospedaje">Solo Hospedaje</option>
+                            <option value="hospedaje-desayuno">Hospedaje y Desayuno</option>
+                        </select>
+                    </div>
+                     <!-- Estilos para el botón de enviar formulario -->
+                    <button type="submit">Reservar Ahora</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Reserva de Hotel. Todos los derechos reservados para Alejandro y Rubi.</p>
+        </div>
+    </footer>
+</body>
+</html>
